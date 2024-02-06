@@ -2,6 +2,8 @@
 <html>
 <head>
     <h1>Exercise 1: Facebook</h1>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" type="text/css" href="Uge6_Opgave3_Exercise1.css">
 </head>
 
 <body>
@@ -17,18 +19,20 @@
         
 
         <td style="width:30%;">
-            <form action="submit_form_url" method="Post">
-                <label for="Name">Name: </label><br>
-                <input type="text" id="Name" placeholder="Enter your name"><br>
+            <form action="submit_form_url" method="Post">                
+                <label for="Name">Name: </label>
+                <input class="InputName" type="text" id="Name" placeholder="Enter your name">
+            
                 
-                <label for="Age">Age: </label> <br>
-                <input type="number" id="Age"><br>
+                <label for="Age">Age: </label>
+                <input class="InputAge" type="number" id="Age">
 
-                <label for="Gender">Gender: </label><br>
-                <input type="radio" name="gender" value="female">Female<br>
-                <input type="radio" name="gender" value="male">Male<br>
-                <input type="radio" name="gender" value="male">Træstub<br><br>
-                <button type="button">Signup</button><br>
+                <label class="GenderLabel" for="Gender">Gender: </label>                
+                <input class="RadioFemale" type="radio" name="gender" value="female">Female</input><br>               
+                <input class="RadioMale" type="radio" name="gender" value="male">Male</input><br>
+                <input class="RadioTræstub" type="radio" name="gender" value="male">Træstub</input><br>
+               
+                <button class="TonniButton" type="button">Signup</button><br>
             </td>
         </tr>
         </form>
